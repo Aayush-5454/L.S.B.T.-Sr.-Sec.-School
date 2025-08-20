@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+  <header class="header">
+    <img src="images/logo.png" alt="School Logo" height="100px">
+    <div class="schname">
+      <h2>L.S.B.T. SENIOR SECONDARY SCHOOL</h2>
+      <h3>(CBSE PATTERN)</h3>
+    </div>
+    <input type="checkbox" id="check" hidden>
+    <label for="check" class="lab1"><i class="fa fa-bars"></i></label>
+    <div class="main-nav">
+      <ul class="nav">
+        <li>
+          <button class="navbtn" >
+            <a href="index.html" >Home</a>
+          </button>
+        </li>
+        <li>
+          <!-- <button class="navbtn"><a href="about.html">About</a></button> -->
+            <div class="dropdown">
+            <button class="navbtn" style="padding: 5px; overflow: visible; width: 130px;">
+              <a href="#" style="padding: 5px; overflow: visible;">About</a>
+            </button>
+            <div class="dropdown-content">
+              <a href="aboutschool.html">About School</a>
+              <a href="aboutdeveloper.html">About Developer</a>
+            
+            </div>
+          </div>
+
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="navbtn" style="padding: 5px; overflow: visible; width: 130px;">
+              <a href="#" style="padding: 5px; overflow: visible;">Academics</a>
+            </button>
+            <div class="dropdown-content">
+              <a href="teachers.html">Teachers &amp; staff</a>
+              <a href="chairman.html">Chairman Message</a>
+              <a href="principal.html">Principal Message</a>
+              <a href="faculty.html">Faculty</a>
+              <a href="Mandatory.html">Mandatory</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="navbtn"><a href="gallery.html">Gallery</a></button>
+        </li>
+        <li>
+          <button class="navbtn" style="  background: linear-gradient(90deg, #ff4e50, #f9d423);"><a href="contact.html" style="color: white;">Contact</a></button>
+        </li>
+      </ul>
+    </div>
+  </header>
+    <!-- apply -->
+     <!-- Contact Section -->
+<div class="contact-section">
+  <h1>Contact Us</h1>
+  <p>We would love to respond to your queries and help you succeed.<br>Feel free to get in touch with us.</p>
+  <div class="contact-container">
+    <form class="contact-form" id="contactForm" autocomplete="off">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName"><i class="fa fa-user"></i> First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Aayush" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName"><i class="fa fa-user"></i> Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Garg" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email"><i class="fa fa-envelope"></i> Email</label>
+          <input type="email" id="email" name="email" placeholder="lsbtschoolpnp@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone"><i class="fa fa-phone"></i> Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="+918950009126" required pattern="^\+?\d{10,15}$">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message"><i class="fa fa-comment"></i> Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit"><i class="fa fa-paper-plane"></i> SEND</button>
+      <div id="form-message"></div>
+    </form>
+    <div class="contact-info">
+      <h3>Reach Us</h3>
+      <ul>
+        <li><i class="fa fa-envelope"></i> lsbtschoolpnp@gmail.com</li>
+        <li><i class="fa fa-phone"></i> +918950009126</li>
+        <li><i class="fa fa-map-marker"></i> Panipat, Jattal, Sondhapur Colony,<br>
+          Gali No 2, Near Janta Clinic,<br>
+          L.S.B.T. Sr. Sec. School</li>
+      </ul>
+      <div class="contact-social">
+        <a href="#"><i class="fa fa-facebook-square"></i></a>
+        <a href="#"><i class="fa fa-twitter-square"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube-square"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+   
+       <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Academics</a></li>
+          <li><a href="#">Facilities</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <div class="social-media">
+          <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter"></a>
+          <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube"></a>
+        </div>
+      </div>
+      <div>
+        <h3>Find Us</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.7801135174095!2d76.94104767600552!3d29.376726875266673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ddb7f5deb0de5%3A0x2b176d894fe46516!2sLSBT%20School!5e0!3m2!1sen!2sin!4v1746459783038!5m2!1sen!2sin" width="100%" height="120" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <p>📍 123 School Street, City, State</p>
+        <p>📞 +1 123-456-7890</p>
+        <p>📧 info@schoolwebsite.com</p>
+      </div>
+    </div>
+    <div class="footer-credit">
+      <p>© 2025 L.S.B.T. Senior Secondary School. All rights reserved.</p><br>
+      <p>Website by CQST Team</p><br>
+      <p>Aayush Garg || Sukhmani Kaur || Vansh Kaushik || Manpreet Saini</p>
+    </div>
+  </footer>
+  <script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const form = e.target;
+  const msg = document.getElementById('form-message');
+  msg.className = '';
+  // Simple validation
+  if (
+    !form.firstName.value.trim() ||
+    !form.lastName.value.trim() ||
+    !form.email.value.trim() ||
+    !form.phone.value.trim() ||
+    !form.message.value.trim()
+  ) {
+    msg.textContent = "Please fill in all fields.";
+    msg.className = "error";
+    return;
+  }
+  // Email format check
+  const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+  if (!emailPattern.test(form.email.value.trim())) {
+    msg.textContent = "Please enter a valid email address.";
+    msg.className = "error";
+    return;
+  }
+  // Phone format check (basic)
+  const phonePattern = /^\+?\d{10,15}$/;
+  if (!phonePattern.test(form.phone.value.trim())) {
+    msg.textContent = "Please enter a valid phone number.";
+    msg.className = "error";
+    return;
+  }
+  // Success
+  msg.textContent = "Thank you! Your message has been sent.";
+  msg.className = "success";
+  form.reset();
+});
+</script>
+</body>
+</html>
