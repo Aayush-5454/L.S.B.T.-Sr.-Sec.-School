@@ -1213,6 +1213,7 @@ button:hover {
     top: 0;
     width: 100%;
     text-align: center;
+     z-index: 1000;
   }
   .nav li {
     display: block;
@@ -1388,6 +1389,7 @@ button:hover {
     font-size: 1rem;
   }
 }
+
 
 
 
