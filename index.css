@@ -2,13 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #f0f4f8;
   color: #222;
-  overflow-x: hidden;
 }
 
 /* =========================
@@ -742,7 +740,7 @@ body {
 /* =========================
    RESPONSIVE UTILITIES
    ========================= */
-/* @media (max-width: 900px) {
+@media (max-width: 900px) {
   .header-content {
     flex-direction: column;
     align-items: flex-start;
@@ -762,8 +760,8 @@ body {
     align-items: center;
     text-align: center;
   }
-} */
-/* @media (max-width: 600px) {
+}
+@media (max-width: 600px) {
   .hero-section {
     min-height: 350px;
   }
@@ -782,7 +780,7 @@ body {
   .footer-content > div {
     margin: 10px 0;
   }
-} */
+}
 /* Principal & Chairman Message Section */
 .message-section {
   /* background: linear-gradient(120deg, #f9d423 0%, #43cea2 100%); */
@@ -839,7 +837,7 @@ body {
   font-size: 1.05rem;
   line-height: 1.6;
 }
-/* @media (max-width: 900px) {
+@media (max-width: 900px) {
   .message-container {
     flex-direction: column;
     gap: 30px;
@@ -849,7 +847,7 @@ body {
     width: 95vw;
     max-width: 400px;
   }
-} */
+}
 
  .news-vertical-marquee {
   height: 80%; /* Show 2-3 items at a time */
@@ -970,7 +968,7 @@ body {
 }
 
 /* Responsive for mobile */
-/* @media (max-width: 992px) {
+@media (max-width: 992px) {
   .facility-section {
     flex-direction: column;
     padding: 40px 20px;
@@ -989,16 +987,14 @@ body {
   .facility-image {
     margin-top: 30px;
   }
-} */
+}
 
 /* 3 box section */
-.info-section {
-  /* position: relative;
-  top: 20px; */
+/* .info-section {
+
   display: flex;
   justify-content: center;
   gap: 40px;
-  /* padding: 80px 20px; */
   padding-bottom: 20px;
   
 }
@@ -1011,8 +1007,7 @@ body {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
   text-align: left;
   position: relative;
-  /* padding-top: 0px; */
-  /* z-index: 1000000; */
+ 
 }
 
 .icon {
@@ -1021,7 +1016,6 @@ body {
   display: inline-block;
 }
 
-/* Heading styling */
 .info-box h2 {
   margin: 10px 0;
   font-size: 24px;
@@ -1033,7 +1027,6 @@ body {
   line-height: 1.6;
 }
 
-/* Individual box colors */
 .learn {
   background-color: #66dd25;
 }
@@ -1045,6 +1038,96 @@ body {
 .meal {
   background-color: #00b7ff;
 }
+
+
+ */
+/* Info Section (Learn, Play, Meal) */
+.info-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0 20px 0;
+  background: linear-gradient(90deg, #f5f7fa 60%, #ffd60011 100%);
+}
+
+.info-box {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #1a237e11;
+  padding: 32px 24px 28px 24px;
+  width: 300px;
+  max-width: 95vw;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.info-box.visible {
+  opacity: 1;
+  transform: none;
+  transition: 0.7s cubic-bezier(.77,0,.18,1);
+}
+
+.info-box .icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  color: #ffd600;
+  background: linear-gradient(135deg, #ff9800 0%, #ffd600 100%);
+  border-radius: 50%;
+  padding: 18px;
+  box-shadow: 0 2px 8px #ffd60033;
+  display: inline-block;
+}
+
+.info-box.learn .icon {
+  background: linear-gradient(135deg, #43a047 0%, #ffd600 100%);
+  color: #fff;
+}
+.info-box.play .icon {
+  background: linear-gradient(135deg, #ff9800 0%, #ffd600 100%);
+  color: #fff;
+}
+.info-box.meal .icon {
+  background: linear-gradient(135deg, #1e88e5 0%, #ffd600 100%);
+  color: #fff;
+}
+
+.info-box h2 {
+  color: #1a237e;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.info-box p {
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Hover effect */
+.info-box:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px #ffd60033;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .info-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 0 10px 0;
+  }
+  .info-box {
+    width: 95vw;
+    max-width: 400px;
+  }
+}
+
 /* reuest a queue */
 .quote-section {
   position: relative;
@@ -1186,209 +1269,20 @@ button:hover {
   background: #f1f1f1;
   margin: 0;
 }
-
-
-
-
-
-
-/* =========================
-   MOBILE RESPONSIVE STYLES
-   ========================= */
 @media (max-width: 900px) {
-  .header {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 0;
-    position: static;
-  }
   .schname {
-    margin-left: 0;
-    padding-left: 0;
-    text-align: center;
-  }
-  .main-nav {
-    position: static;
-    right: 0;
-    top: 0;
-    width: 100%;
-    text-align: center;
-     z-index: 1000;
-  }
-  .nav li {
-    display: block;
-    margin: 10px 0;
-  }
-  .lab1 i {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  .header img {
-    margin: 0 auto;
-    display: block;
-  }
-}
-
-@media (max-width: 700px) {
-  .hero-section,
-  .black-hero {
-    min-height: 350px;
-    height: auto;
-    padding: 0;
-  }
-  .hero-content {
-    margin-top: 40px;
-    padding: 0 10px;
-  }
-  .hero-logo {
-    width: 70px;
-  }
-  .rainbow-text {
-    font-size: 1.3rem;
-  }
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-  .hero-btn {
-    font-size: 1rem;
-    padding: 10px 24px;
-  }
-  .info-section {
-    flex-direction: column;
-    gap: 18px;
-    padding-bottom: 10px;
-    align-items: center;
-  }
-  .info-box {
-    width: 95vw;
-    min-width: 0;
-    padding: 18px;
-    font-size: 1rem;
-  }
-  .announcement-title {
-    font-size: 1.2rem;
-  }
-  .announcement-dabba2 {
-    height: 38px;
-  }
-  .section-title {
-    font-size: 1.3rem;
-  }
-  .fun-facts-grid,
-  .activities-grid,
-  .topper-list,
-  .testimonials-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-  }
-  .fun-fact-card,
-  .activity-card,
-  .topper-card,
-  .testimonial-card {
-    width: 95vw;
-    min-width: 0;
-    padding: 18px 8px;
-  }
-  .memories-section {
-    padding: 30px 5vw;
-  }
-  .memories-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-  .memory-card img {
-    height: 120px;
-  }
-  .facility-section {
-    flex-direction: column;
-    padding: 20px 5vw;
-    gap: 18px;
-  }
-  .facility-content,
-  .facility-image {
-    max-width: 100%;
-    flex: 1 1 100%;
-  }
-  .facility-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-  .facility-item {
-    padding: 10px;
-  }
-  .facility-image {
-    margin-top: 18px;
-  }
-  .merit-section {
-    padding: 30px 5vw;
+    display: none;
   }
   .posters {
     flex-direction: column;
-    gap: 18px;
+    gap: 30px;
   }
   .poster {
-    max-width: 98vw;
-  }
-  .quote-section {
-    padding: 18px 2vw;
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .container,
-  .content {
-    padding: 10px;
-    max-width: 100vw;
-  }
-  .footer {
-    padding: 20px 5vw 10px;
-    border-radius: 20px 20px 0 0;
-    margin-top: 30px;
-  }
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-  }
-  .footer-content > div {
-    margin: 10px 0;
+    max-width: 90%;
+    margin: auto;
   }
 }
 
-/* Extra small screens */
-@media (max-width: 480px) {
-  .header {
-    height: auto;
-    padding: 5px 0;
-  }
-  .schname h2 {
-    font-size: 1rem;
-  }
-  .schname h3 {
-    font-size: 0.8rem;
-  }
-  .hero-content {
-    margin-top: 20px;
-  }
-  .rainbow-text {
-    font-size: 1rem;
-  }
-  .info-box h2 {
-    font-size: 1.1rem;
-  }
-  .facility-content h2 {
-    font-size: 1.1rem;
-  }
-  .facility-item h3 {
-    font-size: 1rem;
-  }
-  .footer-content h3 {
-    font-size: 1rem;
-  }
-}
 
 
 
