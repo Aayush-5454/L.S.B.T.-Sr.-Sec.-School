@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x:hidden;
+
 }
 body {
   font-family: 'Segoe UI', sans-serif;
@@ -1283,6 +1283,7 @@ button:hover {
     margin: auto;
   }
 }
+
 
 
 
