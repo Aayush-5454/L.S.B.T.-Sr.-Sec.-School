@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  overflow-x: hidden;
 }
 body {
   font-family: 'Segoe UI', sans-serif;
@@ -368,7 +368,7 @@ body {
    ACTIVITIES SECTION
    ========================= */
 .activities-section {
-  background: linear-gradient(120deg, #f9d423 0%, #ff4e50 100%);
+  background: linear-gradient(120deg, #43cea2 0%, #185a9d 100%);
   padding: 60px 20px;
   text-align: center;
   /* border-radius: 30px; */
@@ -575,7 +575,6 @@ body {
   opacity: 0;
   transform: translateY(40px);
 }
-
 .topper-card.visible {
   opacity: 1;
   transform: none;
@@ -602,7 +601,7 @@ body {
   transform: scale(1.07) rotate(-2deg);
   box-shadow: 0 8px 32px #0003;
 }
-activities-section
+
 /* =========================
    TESTIMONIALS SECTION
    ========================= */
@@ -721,12 +720,10 @@ activities-section
 .footer-credit a {
   color: #f5ba1a;
   text-decoration: none;
-  
 }
 .footer-credit a:hover {
   text-decoration: underline;
 }
-
 
 /* =========================
    SCROLL ANIMATION
@@ -1255,6 +1252,14 @@ button:hover {
   transition: transform 0.3s;
   max-width: 300px;
 }
+.poster1 {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: visible;
+  transition: transform 0.3s;
+  max-width: 700px;
+}
 
 .poster:hover {
   transform: translateY(-5px);
@@ -1290,8 +1295,4 @@ button:hover {
 
 
 
-
- p{
-  margin: 14px 0px;
-}
 
